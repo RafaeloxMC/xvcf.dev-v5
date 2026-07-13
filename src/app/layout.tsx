@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/footer";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const relationshipOfMelodrame = localFont({
 	src: "../../public/rom.woff2",
@@ -26,7 +30,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className={`${alyamama.variable} ${relationshipOfMelodrame.variable} h-full antialiased`}
+			className={cn("h-full", "antialiased", alyamama.variable, relationshipOfMelodrame.variable, "font-sans", geist.variable)}
 		>
 			<body className="min-h-full flex flex-col">
 				{children}
