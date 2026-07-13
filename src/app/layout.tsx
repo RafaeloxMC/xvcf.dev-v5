@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "@/components/footer";
 
 const relationshipOfMelodrame = localFont({
 	src: "../../public/rom.woff2",
@@ -27,7 +28,10 @@ export default function RootLayout({
 			lang="en"
 			className={`${alyamama.variable} ${relationshipOfMelodrame.variable} h-full antialiased`}
 		>
-			<body className="min-h-full flex flex-col">{children}</body>
+			<body className="min-h-full flex flex-col">
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
