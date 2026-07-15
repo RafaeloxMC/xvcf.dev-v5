@@ -18,7 +18,7 @@ export default function Home() {
 			<div className="mt-16 w-full">
 				<ContainerTextFlip
 					words={["some of the music i made:"]}
-					textClassName="text-4xl"
+					textClassName="text-2xl"
 				/>
 				<div>
 					<iframe
