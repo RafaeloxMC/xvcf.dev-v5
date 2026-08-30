@@ -1,5 +1,10 @@
 "use client";
 
+// Hey there! This component is from Aceternity UI! I partly modified to my liking.
+// I changed the background, the font and the padding between the individual characters!
+// All credits:
+// https://ui.aceternity.com/components/container-text-flip
+
 import React, { useState, useEffect, useId } from "react";
 
 import { motion } from "motion/react";
@@ -33,7 +38,7 @@ export function ContainerTextFlip({
 	const updateWidthForWord = () => {
 		if (textRef.current) {
 			// Add some padding to the text width (30px on each side)
-			// @ts-ignore
+			// @ts-expect-error current is never, scrollWidth does not exist on never
 			const textWidth = textRef.current.scrollWidth + 30;
 			setWidth(textWidth);
 		}
