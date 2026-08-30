@@ -1,5 +1,6 @@
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 import Link from "next/link";
+import EmojiThreeC from "@/components/ui/emoji";
 
 export default function Home() {
 	return (
@@ -21,6 +22,15 @@ export default function Home() {
 					words={["some of the music i made:"]}
 					textClassName="text-2xl"
 				/>
+				<div className="flex flex-row items-center">
+					{" "}
+					<ContainerTextFlip
+						words={["maybe i'll improve them one day"]}
+						textClassName="text-sm"
+						animationDuration={250}
+					/>{" "}
+					<EmojiThreeC />
+				</div>
 				<div className="grid grid-cols-2 grid-rows-1 gap-4">
 					<div>
 						<iframe
