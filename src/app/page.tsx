@@ -1,4 +1,5 @@
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -110,6 +111,30 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="mt-16 w-full flex flex-col gap-4">
+				<ContainerTextFlip
+					words={["code projects:"]}
+					textClassName="text-2xl"
+				/>
+				<ul className="list-disc translate-x-5">
+					<li>
+						this site!{" "}
+						{/* <Link
+							href={"https://github.com/RafaeloxMC/xvcf.dev-v5"}
+						>
+							repo
+						</Link>{" "}
+						|  */}
+						<Link href={"https://xvcf.dev/"}>demo</Link>
+					</li>
+					<li>
+						shibarunner!{" "}
+						<Link href={"https://xvcf.itch.io/shibarunner"}>
+							demo
+						</Link>
+					</li>
+				</ul>
 			</div>
 		</div>
 	);
