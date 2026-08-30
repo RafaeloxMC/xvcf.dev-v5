@@ -94,7 +94,7 @@ export function ContainerTextFlip({
 							transition={{
 								delay: index * 0.05,
 							}}
-							className="p-1"
+							className="pr-1"
 						>
 							{letter}
 						</motion.span>
