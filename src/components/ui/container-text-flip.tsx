@@ -1,6 +1,6 @@
 "use client";
 
-// Hey there! This component is from Aceternity UI! I partly modified to my liking.
+// Hey there! This component is from Aceternity UI! I partly modified it to my liking.
 // I changed the background, the font and the padding between the individual characters!
 // All credits:
 // https://ui.aceternity.com/components/container-text-flip
