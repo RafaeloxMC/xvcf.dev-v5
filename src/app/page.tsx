@@ -144,6 +144,22 @@ export default function Home() {
 							demo
 						</Link>
 					</li>
+					<li>
+						super taxi sim!{" "}
+						<Link href={"https://xvcf.itch.io/super-taxi-sim"}>
+							demo
+						</Link>{" "}
+						(unfinished!)
+					</li>
+					{/* Currently commented out since project is still under review! */}
+					{/* <li>
+						midicraft!{" "}
+						<Link
+							href={"https://modrinth.com/project/midicraft-mod"}
+						>
+							demo
+						</Link>
+					</li> */}
 				</ul>
 			</div>
 		</div>
