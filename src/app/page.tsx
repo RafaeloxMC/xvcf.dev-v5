@@ -25,7 +25,7 @@ export default function Home() {
 				<div className="flex flex-row items-center">
 					{" "}
 					<ContainerTextFlip
-						words={["maybe i'll improve them one day"]}
+						words={["maybe i'll improve one day"]}
 						textClassName="text-sm"
 						animationDuration={250}
 					/>{" "}
